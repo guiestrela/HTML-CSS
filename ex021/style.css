@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: center;
+}
+
+h1 { /* Box-level*/
+    background-color: lightgrey;
+    height: 300px;
+    width: 300px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkslategray;
+
+    /* border: 10px solid darkslategray;  Shorthand*/
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    /* padding: 10px 10px 10px 10px;  Shorthand*/
+
+    /* margin: auto;  centralizar*/
+    
+    /* - sempre colocar na ordem horaria */
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+
+    /* margin: 10px 10px 40px 10px; Shorthand*/
+
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: green;
+
+    /* outline: 5px dashed green; Shorthand*/
+      
+
+    box-shadow: 3px 5px 4px rgb(23, 32, 32);
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    font-family: Verdana;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+    border: 10px solid red;
+   
+    padding: 1px;
+ 
+}
