@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -26,6 +27,13 @@
             padding: 10px;
             background-color: lightgrey;
 
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkgrey;
+            /* criando cabeçaljo fixo na tabela*/
         }
 
         thead, tfoot {
