@@ -21,7 +21,20 @@
             padding: 10px;
         }
 
-        th, td {
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        
+        th#exatas, #humanas {
+            background-color: white;
+            color: black;
+        }
+
+        td {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
@@ -33,15 +46,63 @@
     <table>
         <thead>
             <tr>
-                <th colspan="2">Área</th>
-                <th colspan="2">Disciplina</th>
-                <th>Notas</th>
-                <th colspan="2">Média</th>
+                <th rowspan="2" scope="row">Área</th>
+                <th rowspan="2" scope="row">Disciplina</th>
+                <th colspan="2" scope="rowgroup">Notas</th>
+                <th rowspan="2" scope="row">Média</th>                
             </tr>
-            <tr></tr>
+            <tr>
+                <th scope="row">Nota 1</th>
+                <th scope="row">Nota 2</th>
+            </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <th rowspan="4" id="exatas" scope="colgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="col">Média de Exatas</th>
+                <th>0.0</th>
+            </tr>
+            <tr>
+                <th rowspan="2" id="humanas" scope="colgroup">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="col">Média de Humanas</th>
+                <th>0.0</th>
+            </tr>
         </tbody>
     </table>
 </body>
